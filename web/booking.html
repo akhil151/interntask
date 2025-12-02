@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Tour - Wanderlust</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Wanderlust</div>
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="booking.html" class="active">Book Tour</a>
+            <a href="login.html">Login</a>
+        </div>
+    </nav>
+
+    <div class="booking-container">
+        <h1>Book Your Dream Tour</h1>
+        <form id="bookingForm" class="booking-form">
+            <div class="form-group">
+                <label for="destination">Destination</label>
+                <select id="destination" required>
+                    <option value="">Select Destination</option>
+                    <option value="bali">Bali, Indonesia</option>
+                    <option value="paris">Paris, France</option>
+                    <option value="tokyo">Tokyo, Japan</option>
+                    <option value="santorini">Santorini, Greece</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="checkin">Check-in Date</label>
+                    <input type="date" id="checkin" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkout">Check-out Date</label>
+                    <input type="date" id="checkout" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="adults">Adults</label>
+                    <input type="number" id="adults" min="1" max="10" value="2" required>
+                </div>
+                <div class="form-group">
+                    <label for="children">Children</label>
+                    <input type="number" id="children" min="0" max="10" value="0">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="package">Tour Package</label>
+                <select id="package" required>
+                    <option value="">Select Package</option>
+                    <option value="basic">Basic - $499</option>
+                    <option value="premium">Premium - $899</option>
+                    <option value="luxury">Luxury - $1499</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="John Doe" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="john@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="+1 234 567 8900" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Confirm Booking</button>
+        </form>
+
+        <div id="successMsg" class="success-msg">
+            <h2>🎉 Booking Confirmed!</h2>
+            <p>We'll send confirmation details to your email.</p>
+        </div>
+    </div>
+
+    <script src="booking.js"></script>
+</body>
+</html>
