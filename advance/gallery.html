@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Wanderlust Tours</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0. 0/css/all.min. css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-globe-americas"></i>
+            Wanderlust
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="packages.html">Packages</a>
+            <a href="gallery.html" class="active">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="booking.html">Book Tour</a>
+            <a href="login.html">Login</a>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Travel Gallery</h1>
+            <p>Explore breathtaking destinations through our lens</p>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="beaches">Beaches</button>
+                <button class="filter-btn" data-filter="mountains">Mountains</button>
+                <button class="filter-btn" data-filter="cities">Cities</button>
+                <button class="filter-btn" data-filter="culture">Culture</button>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Beach Images -->
+                <div class="gallery-item" data-category="beaches">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600" alt="Tropical Beach">
+                    <div class="overlay">
+                        <h3>Maldives Paradise</h3>
+                        <p>Crystal clear waters and pristine beaches</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="beaches">
+                    <img src="https://images.unsplash. com/photo-1544551763-46a013bb70d5?w=600" alt="Sunset Beach">
+                    <div class="overlay">
+                        <h3>Bali Sunset</h3>
+                        <p>Golden hour at Tanah Lot</p>
+                    </div>
+                </div>
+
+                <!-- Mountain Images -->
+                <div class="gallery-item" data-category="mountains">
+                    <img src="https://images.unsplash.com/photo-1464822759844-d150ad6cbeb8?w=600" alt="Mountain Peak">
+                    <div class="overlay">
+                        <h3>Swiss Alps</h3>
+                        <p>Majestic peaks and alpine beauty</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="mountains">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600" alt="Mountain Lake">
+                    <div class="overlay">
+                        <h3>Himalayan Heights</h3>
+                        <p>Serene mountain lakes</p>
+                    </div>
+                </div>
+
+                <!-- City Images -->
+                <div class="gallery-item" data-category="cities">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600" alt="Paris Cityscape">
+                    <div class="overlay">
+                        <h3>Paris at Night</h3>
+                        <p>The City of Light illuminated</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="cities">
+                    <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600" alt="Tokyo Skyline">
+                    <div class="overlay">
+                        <h3>Tokyo Skyline</h3>
+                        <p>Modern metropolis meets tradition</p>
+                    </div>
+                </div>
+
+                <!-- Culture Images -->
+                <div class="gallery-item" data-category="culture">
+                    <img src="https://images. unsplash.com/photo-1548013146-72479768bada?w=600" alt="Temple">
+                    <div class="overlay">
+                        <h3>Angkor Wat</h3>
+                        <p>Ancient temple complex</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="culture">
+                    <img src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=600" alt="Cultural Festival">
+                    <div class="overlay">
+                        <h3>Local Festival</h3>
+                        <p>Vibrant cultural celebrations</p>
+                    </div>
+                </div>
+
+                <!-- More Images -->
+                <div class="gallery-item" data-category="beaches">
+                    <img src="https://images.unsplash. com/photo-1571501679680-de32f1e7aad4?w=600" alt="Beach Resort">
+                    <div class="overlay">
+                        <h3>Santorini Beach</h3>
+                        <p>Greek island paradise</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="mountains">
+                    <img src="https://images.unsplash. com/photo-1506905925346-21bda4d32df4?w=600" alt="Mountain Trail">
+                    <div class="overlay">
+                        <h3>Alpine Trail</h3>
+                        <p>Hiking through scenic landscapes</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="cities">
+                    <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=600" alt="London">
+                    <div class="overlay">
+                        <h3>London Bridge</h3>
+                        <p>Historic architecture meets modern city</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="culture">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600" alt="Market">
+                    <div class="overlay">
+                        <h3>Local Markets</h3>
+                        <p>Authentic cultural experiences</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <button class="close-lightbox">&times;</button>
+            <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            <img id="lightbox-img" src="" alt="">
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/gallery.js"></script>
+</body>
+</html>

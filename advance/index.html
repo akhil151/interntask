@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Tours - Explore the World</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare. com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="plane">
+                <i class="fas fa-plane"></i>
+            </div>
+            <div class="loading-text">Preparing Your Adventure...</div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-globe-americas"></i>
+                Wanderlust
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="pages/packages.html" class="nav-link">Packages</a>
+                <a href="pages/gallery.html" class="nav-link">Gallery</a>
+                <a href="pages/about.html" class="nav-link">About</a>
+                <a href="pages/contact.html" class="nav-link">Contact</a>
+                <a href="pages/booking.html" class="nav-link book-now-nav">Book Now</a>
+                <a href="pages/login. html" class="nav-link">Login</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Video Background -->
+    <section id="home" class="hero">
+        <video class="hero-video" autoplay muted loop>
+            <source src="https://player.vimeo.com/external/195913085. sd.mp4?s=e976c3e8c28bf0c27c83b9f3c99c1dd3b97419b8&profile_id=164" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">Explore the</span>
+                <span class="title-line highlighted">World</span>
+            </h1>
+            <p class="hero-subtitle">Discover breathtaking destinations and create memories that last a lifetime</p>
+            <div class="hero-buttons">
+                <a href="pages/booking.html" class="cta-btn primary">Start Your Journey</a>
+                <a href="#destinations" class="cta-btn secondary">Explore Destinations</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="15000">0</div>
+                    <div class="stat-label">Happy Travelers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Destinations</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-label">Tour Packages</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="25">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Wanderlust</h2>
+                <p>We provide exceptional travel experiences with personalized service</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Expert Guides</h3>
+                    <p>Professional local guides with 10+ years of experience in their regions</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3>Best Prices</h3>
+                    <p>Competitive rates with no hidden fees and flexible payment options</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer assistance wherever your journey takes you</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Safe Travel</h3>
+                    <p>Comprehensive safety measures and travel insurance included</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Popular Destinations</h2>
+                <p>Discover the most amazing places on Earth</p>
+            </div>
+            <div class="destinations-grid">
+                <div class="destination-card" data-tilt>
+                    <div class="destination-image">
+                        <img src="https://images. unsplash.com/photo-1537996194471-e657df975ab4?w=600" alt="Bali">
+                        <div class="destination-overlay">
+                            <div class="destination-info">
+                                <h3>Bali, Indonesia</h3>
+                                <p>Tropical paradise with stunning beaches</p>
+                                <div class="price">From $899</div>
+                                <a href="pages/booking.html" class="book-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card" data-tilt>
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600" alt="Paris">
+                        <div class="destination-overlay">
+                            <div class="destination-info">
+                                <h3>Paris, France</h3>
+                                <p>City of lights, art, and romance</p>
+                                <div class="price">From $1299</div>
+                                <a href="pages/booking.html" class="book-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card" data-tilt>
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600" alt="Tokyo">
+                        <div class="destination-overlay">
+                            <div class="destination-info">
+                                <h3>Tokyo, Japan</h3>
+                                <p>Modern metropolis meets tradition</p>
+                                <div class="price">From $1599</div>
+                                <a href="pages/booking.html" class="book-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card" data-tilt>
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=600" alt="Santorini">
+                        <div class="destination-overlay">
+                            <div class="destination-info">
+                                <h3>Santorini, Greece</h3>
+                                <p>Iconic white buildings and blue domes</p>
+                                <div class="price">From $1199</div>
+                                <a href="pages/booking.html" class="book-btn">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Travelers Say</h2>
+                <p>Real experiences from real people</p>
+            </div>
+            <div class="testimonials-carousel">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <p>"Wanderlust made our honeymoon absolutely perfect.  The attention to detail and personalized service exceeded our expectations!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Sarah Johnson">
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <span>Bali Package</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Amazing trip to Japan! The cultural experiences and local guides were incredible. Highly recommend Wanderlust!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Mike Chen">
+                            <div class="author-info">
+                                <h4>Mike Chen</h4>
+                                <span>Tokyo Adventure</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The European tour was fantastic! Every detail was perfectly planned. Best vacation we've ever had!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Emily Davis">
+                            <div class="author-info">
+                                <h4>Emily Davis</h4>
+                                <span>European Tour</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-nav">
+                <button class="nav-dot active"></button>
+                <button class="nav-dot"></button>
+                <button class="nav-dot"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Get the latest travel deals and destination guides delivered to your inbox</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-globe-americas"></i>
+                        Wanderlust
+                    </div>
+                    <p>Your gateway to extraordinary adventures around the world.  Creating memories one journey at a time.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="pages/packages.html">Packages</a></li>
+                        <li><a href="pages/gallery.html">Gallery</a></li>
+                        <li><a href="pages/about. html">About Us</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Destinations</h3>
+                    <ul>
+                        <li><a href="#">Asia</a></li>
+                        <li><a href="#">Europe</a></li>
+                        <li><a href="#">Africa</a></li>
+                        <li><a href="#">Americas</a></li>
+                        <li><a href="#">Oceania</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Travel Street, Adventure City</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@wanderlust.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Wanderlust Tours. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="scroll-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="scripts/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Tour - Wanderlust</title>
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-globe-americas"></i>
+            Wanderlust
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="packages.html">Packages</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="booking.html" class="active">Book Tour</a>
+            <a href="login.html">Login</a>
+        </div>
+    </nav>
+
+    <div class="booking-container">
+        <!-- Progress Steps -->
+        <div class="progress-steps">
+            <div class="step active">
+                <div class="step-number">1</div>
+                <div class="step-label">Destination</div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-label">Details</div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-label">Personal Info</div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-label">Confirmation</div>
+            </div>
+        </div>
+
+        <div class="booking-content">
+            <h1>Book Your Dream Tour</h1>
+            
+            <!-- Step 1: Destination Selection -->
+            <div class="form-step active" data-step="1">
+                <h2>Choose Your Destination</h2>
+                <div class="destinations-grid">
+                    <div class="destination-option" data-destination="bali" data-price="899">
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=400" alt="Bali">
+                        <div class="destination-info">
+                            <h3>Bali, Indonesia</h3>
+                            <p>Tropical paradise with stunning beaches</p>
+                            <div class="price">From $899</div>
+                        </div>
+                    </div>
+                    <div class="destination-option" data-destination="paris" data-price="1299">
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400" alt="Paris">
+                        <div class="destination-info">
+                            <h3>Paris, France</h3>
+                            <p>City of lights, art, and romance</p>
+                            <div class="price">From $1299</div>
+                        </div>
+                    </div>
+                    <div class="destination-option" data-destination="tokyo" data-price="1599">
+                        <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400" alt="Tokyo">
+                        <div class="destination-info">
+                            <h3>Tokyo, Japan</h3>
+                            <p>Modern metropolis meets tradition</p>
+                            <div class="price">From $1599</div>
+                        </div>
+                    </div>
+                    <div class="destination-option" data-destination="santorini" data-price="1199">
+                        <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=400" alt="Santorini">
+                        <div class="destination-info">
+                            <h3>Santorini, Greece</h3>
+                            <p>Iconic white buildings and blue domes</p>
+                            <div class="price">From $1199</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2: Tour Details -->
+            <div class="form-step" data-step="2">
+                <h2>Tour Details</h2>
+                <form class="booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="checkin"><i class="fas fa-calendar-alt"></i> Check-in Date</label>
+                            <input type="date" id="checkin" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout"><i class="fas fa-calendar-alt"></i> Check-out Date</label>
+                            <input type="date" id="checkout" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="adults"><i class="fas fa-user"></i> Adults</label>
+                            <div class="number-input">
+                                <button type="button" class="minus">-</button>
+                                <input type="number" id="adults" min="1" max="10" value="2" required>
+                                <button type="button" class="plus">+</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="children"><i class="fas fa-child"></i> Children</label>
+                            <div class="number-input">
+                                <button type="button" class="minus">-</button>
+                                <input type="number" id="children" min="0" max="10" value="0">
+                                <button type="button" class="plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="package"><i class="fas fa-box"></i> Tour Package</label>
+                        <div class="package-options">
+                            <div class="package-option" data-package="basic" data-multiplier="1">
+                                <h4>Basic Package</h4>
+                                <p>Essential amenities and guided tours</p>
+                                <div class="package-price">Base Price</div>
+                            </div>
+                            <div class="package-option" data-package="premium" data-multiplier="1.5">
+                                <h4>Premium Package</h4>
+                                <p>Luxury accommodations and exclusive experiences</p>
+                                <div class="package-price">+50% of base</div>
+                            </div>
+                            <div class="package-option" data-package="luxury" data-multiplier="2.2">
+                                <h4>Luxury Package</h4>
+                                <p>Ultimate luxury with private guides and premium services</p>
+                                <div class="package-price">+120% of base</div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Step 3: Personal Information -->
+            <div class="form-step" data-step="3">
+                <h2>Personal Information</h2>
+                <form class="booking-form">
+                    <div class="form-group">
+                        <label for="name"><i class="fas fa-user"></i> Full Name</label>
+                        <input type="text" id="name" placeholder="John Doe" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                            <input type="email" id="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone"><i class="fas fa-phone"></i> Phone Number</label>
+                            <input type="tel" id="phone" placeholder="+1 234 567 8900" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="special-requests"><i class="fas fa-comment"></i> Special Requests</label>
+                        <textarea id="special-requests" rows="4" placeholder="Any special requirements or requests..."></textarea>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Step 4: Confirmation -->
+            <div class="form-step" data-step="4">
+                <h2>Booking Summary</h2>
+                <div class="booking-summary">
+                    <div class="summary-section">
+                        <h3>Destination</h3>
+                        <div id="summary-destination">-</div>
+                    </div>
+                    <div class="summary-section">
+                        <h3>Dates</h3>
+                        <div id="summary-dates">-</div>
+                    </div>
+                    <div class="summary-section">
+                        <h3>Guests</h3>
+                        <div id="summary-guests">-</div>
+                    </div>
+                    <div class="summary-section">
+                        <h3>Package</h3>
+                        <div id="summary-package">-</div>
+                    </div>
+                    <div class="summary-section total">
+                        <h3>Total Price</h3>
+                        <div id="summary-total">$0</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="form-navigation">
+                <button type="button" class="btn btn-secondary" id="prevBtn" onclick="changeStep(-1)">Previous</button>
+                <button type="button" class="btn btn-primary" id="nextBtn" onclick="changeStep(1)">Next</button>
+                <button type="button" class="btn btn-success" id="confirmBtn" onclick="confirmBooking()">Confirm Booking</button>
+            </div>
+        </div>
+
+        <!-- Success Modal -->
+        <div id="successModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2><i class="fas fa-check-circle"></i> Booking Confirmed!</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Thank you for choosing Wanderlust! Your booking has been confirmed.</p>
+                    <p>Booking ID: <strong id="bookingId">-</strong></p>
+                    <p>We'll send confirmation details to your email.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" onclick="closeModal()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Price Calculator Widget -->
+    <div class="price-calculator">
+        <h3><i class="fas fa-calculator"></i> Price Calculator</h3>
+        <div class="price-breakdown">
+            <div class="price-item">
+                <span>Base Price:</span>
+                <span id="calc-base">$0</span>
+            </div>
+            <div class="price-item">
+                <span>Package Multiplier:</span>
+                <span id="calc-multiplier">1x</span>
+            </div>
+            <div class="price-item">
+                <span>Guests:</span>
+                <span id="calc-guests">0</span>
+            </div>
+            <div class="price-item">
+                <span>Nights:</span>
+                <span id="calc-nights">0</span>
+            </div>
+            <div class="price-item total">
+                <span>Total:</span>
+                <span id="calc-total">$0</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/booking.js"></script>
+</body>
+</html>
