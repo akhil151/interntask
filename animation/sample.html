@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sample Animation</title>
+        <style>
+            body {
+                background-color: #f0f0f0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .box {
+                width: 100px;
+                height: 100px;
+                background-color: #3498db;
+                animation: moveBox 3s infinite alternate;
+                
+            }
+
+            @keyframes moveBox {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(200px);
+                }
+                50% {
+                    transform: translateX(100px) rotate(180deg);
+                }
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+    </body>
+    </head>
+</html>
